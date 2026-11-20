@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zip Zap Type</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="logo" data-t="logo"></div><div class="right"><div class="name" data-t="author"></div><button class="tgl" id="theme" aria-label="Toggle dark mode">◐</button></div></header>
+
+<main class="wrap">
+<h1 id="title" aria-label=""></h1>
+<p class="lead" data-t="lead"></p>
+<a class="btn" href="#play" data-t="cta"></a>
+</main>
+
+<div class="marquee" aria-hidden="true"><div id="mq"></div></div>
+
+<main class="wrap">
+<section id="play" class="reveal">
+<h2 data-t="playTitle"></h2>
+<div class="modes" id="modes" role="group"></div>
+<div class="stats">
+<div class="stat"><b id="sTime">30</b><small data-t="lblTime"></small></div>
+<div class="stat"><b id="sWpm">0</b><small data-t="lblWpm"></small></div>
+<div class="stat"><b id="sBest">0</b><small data-t="lblBest"></small></div>
+<div class="stat"><b id="sStreak">0</b><small data-t="lblStreak"></small></div>
+</div>
+<div class="bar"><i id="prog"></i></div>
+<div class="passage" id="passage" aria-live="off"></div>
+<textarea id="inp" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Type here"></textarea>
+<p class="hint" id="hint" data-t="hint"></p>
+<button class="btn ghost" id="restart" data-t="restart"></button>
+
+<div class="result" id="result" role="status">
+<div data-t="resTitle"></div>
+<div class="big" id="rWpm">0</div>
+<div class="rank" id="rRank"></div>
+<p id="rLine"></p>
+<small data-t="histTitle"></small><div class="hist" id="hist"></div>
+<button class="btn" id="share"></button>
+</div>
+</section>
+
+<section class="reveal">
+<h2 data-t="tipsTitle"></h2>
+<div class="tips" id="tips"></div>
+</section>
+</main>
+<footer class="reveal" id="foot"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
